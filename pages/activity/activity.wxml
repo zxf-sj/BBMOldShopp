@@ -1,0 +1,20 @@
+<view>
+<wxs src="../../lib/numberHandle/handle.wxs" module="filters" />
+  <image class="active_ban" src="{{activeImg}}"></image>
+  <view class="item" wx:for="{{activeShop}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.id}}">
+    <navigator url="/pages/goods/goods?id={{item.id}}}}">
+      <image class="img" src="{{item.list_pic_url}}" background-size="cover"></image>
+      <view class="right">
+        <view class="text">
+          <text class="name">{{item.name}}</text>
+          <text class="desc">{{item.goods_brief}}</text>
+          <s class="pricedel">原价￥{{item.retail_price}}</s>
+          <s class="price" wx:if="{{item.extra_price > 1}}">现价￥{{item.retail_price - item.extra_price}}</s>
+          <s class="price" wx:elif="{{item.extra_price == 1}}">现价￥{{item.retail_price}}</s>
+          <s class="price" wx:elif="{{item.extra_price < 1}}">现价￥{{filters.toFix(item.retail_price * item.extra_price)}}</s>
+          <s class="price" wx:else="{{item.extra_price == null}}">现价￥{{item.retail_price}}</s>
+        </view>
+      </view>
+    </navigator>
+  </view> 
+</view>

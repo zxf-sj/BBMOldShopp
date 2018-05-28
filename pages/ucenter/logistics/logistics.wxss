@@ -1,0 +1,99 @@
+/* index/index.wxss */  
+page{  
+    background: #fff;  
+    width: 100%;
+    height: auto;
+}  
+scroll-view{  
+    border: 2rpx solid #fff;  
+}  
+  
+.container{  
+    display: flex;  
+    flex-direction: column;  
+    background:#fff;
+    width:100%;
+    height:100%;
+    flex-flow:wrap row;
+}  
+  
+.con_left {
+  width: 76rpx;
+  height: auto;
+  float: left;
+  background-color: #000;
+}
+
+.con_right{
+  flex:1;
+  height: auto;
+  float: right;
+  padding-right:100rpx;
+}
+.con_right .con_nav{
+  width: 100%;
+  height: auto;
+  display:flex;
+  flex-flow:column;
+  margin-left:100rpx;
+  margin-top:160rpx;
+  margin-bottom: 10rpx;
+}
+
+.con_right .con_nav .nav_name {
+  line-height: 48rpx;
+  height: 48rpx;
+  font-size: 28rpx;
+  color: #959595;
+  text-align: left;
+}
+
+.con_right .con_cen {
+  width: 100%;
+  height: auto;
+  display: flex;  
+  flex-flow: column; 
+  margin-left: 100rpx;
+  padding-top: 46rpx;
+  border-left:1px solid #000;
+  padding-left:20rpx;
+  position: relative;
+}
+
+.con_right .con_cen .log_img {
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  left:-10rpx;
+  top:58rpx;
+}
+
+.con_right .con_cen .log_txt {
+  width: 100%;
+  height: auto;
+  font-size: 24rpx;
+  line-height: 44rpx;
+  color: #9f9f9f;
+  text-align: left;
+}
+
+.con_right .con_cen .log_time {
+  width: 100%;
+  height: 44rpx;
+  font-size: 23rpx;
+  line-height: 44rpx;
+  color: #9f9f9f;
+  text-align: left;
+  margin-left: 10rpx;
+}
+
+.con_right .con_nav .nav_odd {
+  line-height: 48rpx;
+  height: 48rpx;
+  font-size: 26rpx;
+  color: #959595;
+  text-align: left;
+}
+
+
+

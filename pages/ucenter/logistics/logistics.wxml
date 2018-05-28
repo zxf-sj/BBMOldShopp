@@ -1,0 +1,19 @@
+<view class="container" >  
+    <!-- <view class="con_left"></view> -->
+    <view class="con_right">
+        <view class="con_nav">
+            <text class="nav_name" wx:if="{{orderNum.length > 0}}">{{params}}</text>
+            <text class="nav_odd" wx:if="{{orderNum.length > 0}}">运单号：{{orderNum}}</text>
+        </view>
+        <view wx:for="{{dataInfo}}" wx:key="{{item.id}}" class="con_cen">
+            <text class="log_txt">{{item.context}}</text>
+            <text class="log_time">{{item.ftime}}</text>
+            <image src="http://p7gyzx0cb.bkt.clouddn.com/20180510/1502035834a3eb.png" class="log_img"></image>
+         </view>
+         
+         <view class="con_cen">
+            <text class="log_txt">卖家发货</text>
+            <image src="http://p7gyzx0cb.bkt.clouddn.com/20180510/1502035834a3eb.png" class="log_img"></image>
+         </view>
+    </view>
+</view>  
